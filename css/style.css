@@ -17,7 +17,7 @@ header{
  color:#F2F2F2;
  background-color: #57201e;
  height: 76px;
- padding: 26px 20px;
+ padding: 0 5%;
 
  display: flex;
  justify-content: space-between;
@@ -71,6 +71,14 @@ main{
  flex-wrap: wrap;
  row-gap: 40px;
  column-gap: 40px;
+}
+
+@media (max-width: 540px) {
+  /* Altera o layout do container de cards APENAS em telas de celular */
+  .books-container {
+    /* Esta regra SÓ se aplica se a tela tiver 540px ou menos de largura */
+    justify-content: center;
+  }
 }
 
 .book-card{
