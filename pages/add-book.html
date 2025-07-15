@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Adicionar Review</title>
+        <link rel="stylesheet" href="../css/style.css">
+
+    </head>
+
+    <body>
+       <header>
+            <nav>
+                <a href="../index.html">
+                    <img src="../assets/images/open-book.png" alt="Livro" height="30">
+                    <span>MLib</span>
+                </a>
+            </nav>
+            
+            <nav>
+                <a href="add-book.html">
+                    <button class="add-button" aria-label="Add new book review">+</button>
+                </a>
+            </nav>
+        </header>
+
+        <main>  
+            <div class="form-page-container">
+                <h2>Nova crítica</h2>
+                <div class="form-container">
+                    <form>
+                        <div class="form-pergunta">
+                            <label for="book-name">Nome do livro:</label>
+                            <input type="text" id="book-name" placeholder="Escreva o nome do livro">
+                        </div>
+
+                        <div class="form-pergunta">
+                            <label for="book-image">Imagem do livro:</label>
+                            <input type="text" id="book-image" placeholder="Coloque o URL da foto">
+                        </div>
+
+                        <div class="row">
+                            <div class="form-pergunta">
+                                <label for="rating-select">Stars:</label>
+                                <select id="rating-select">
+                                    <option value="">Choose a rating</option>
+                                    <option value="1">★☆☆☆☆ - 1 Star</option>
+                                    <option value="2">★★☆☆☆ - 2 Stars</option>
+                                    <option value="3">★★★☆☆ - 3 Stars</option>
+                                    <option value="4">★★★★☆ - 4 Stars</option>
+                                    <option value="5">★★★★★ - 5 Stars</option>
+                                </select>
+                            </div>
+
+                            <div class="form-pergunta">
+                                <label for="red-date">Data da leitura:</label>
+                                <input type="date" id="watched-date">
+
+                            </div>
+                        </div>
+
+                        <div class="form-pergunta">
+                            <label for="review-text">Resenha do livro:</label>
+                            <textarea id="review-text" rows="5" placeholder="Escreva suas impressões aqui.."></textarea>
+                    
+                        </div>
+                        <button type="submit" class="submit-button">Add</button>
+                    </form>
+                </div>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2025 MLib - My library</p>
+        </footer>
+
+    </body>
+</html>
