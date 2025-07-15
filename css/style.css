@@ -242,3 +242,60 @@ footer{
     transform: translateY(0);    /* Termina na sua posição original (sem deslocamento) */
   }
 }
+
+@media (max-width: 540px) {
+  /* ... */
+
+  /* Ajusta o container geral da página do formulário para ter menos margem vertical e um padding lateral garantido */
+  .form-page-container {
+    margin: 30px auto; 
+    padding: 0 15px;
+  }
+
+  /* Reduz o tamanho do título principal da página para caber melhor na tela */
+  .form-page-container h2 {
+    font-size: 30px;
+  }
+
+  /* Diminui o espaçamento interno do 'card' do formulário */
+  .form-container {
+    padding: 25px 20px;
+  }
+
+  /* Reduz o tamanho da fonte dos rótulos (labels) para uma melhor proporção */
+  .form-pergunta label {
+    font-size: 20px;
+  }
+
+  /* A principal mudança para responsividade do formulário */
+  .row {
+    /* Faz os itens que estavam lado a lado (como 'Stars' e 'Watched Date') ficarem empilhados verticalmente */
+    flex-direction: column;
+
+    /* Não precisamos mais de um espaço entre os campos, pois eles não estão mais na mesma linha */
+    gap: 0px;
+  }
+}
+
+@media (max-width: 540px) {
+
+    .review-page {
+        flex-direction: column; /* Altera o eixo principal do Flexbox para vertical, colocando o pôster em cima das informações. */
+        align-items: center;    /* Centraliza os itens empilhados (o pôster e o bloco de informações) na horizontal. */
+        gap: 20px;              /* Agora, o 'gap' controla o espaçamento vertical entre o pôster e o bloco de informações. */
+        padding: 20px;          /* Reduz o espaçamento interno do card para otimizar o espaço em telas menores. */
+        margin: 30px 15px;      /* Reduz a margem vertical e garante uma margem lateral para não colar nas bordas da tela. */
+    }
+      .review-img{
+        width: 100%;      /* Faz a imagem ter a largura máxima de seu container, tornando-a fluida. */
+        max-width: 260px; /* Limita a largura da imagem para que ela não fique excessivamente grande. */
+    }
+    .review-info h2 {
+        font-size: 24px;      /* Reduz o tamanho do título do filme. */
+        text-align: center;   /* Centraliza o título, o que geralmente fica mais harmonioso no layout de coluna única. */
+    }
+    
+    .review-info p {
+        font-size: 16px; /* Reduz o tamanho do texto dos parágrafos, melhorando a legibilidade no celular. */
+    }
+}
